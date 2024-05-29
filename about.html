@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+        body {
+            background-color: rgb(249, 241, 231);  
+            max-width: 1461px;
+        }
+        header {
+            margin-top: -1rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .logo-img{
+            margin-left: 2rem;
+        }
+        nav{
+            background-color: rgb(79, 55, 55);
+            padding: 1rem ;
+            margin-top: -8.5rem;
+            margin-left: -1rem;
+            width: 100%;
+            margin-right: -1rem;
+            font-family: sans-serif;
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none; 
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+            cursor: pointer;
+            margin-left:55rem;
+        }
+        nav ul li {
+            font-size: 1.3rem;
+            display: inline;
+            justify-content: center;
+            margin-left: 3.3rem;
+            font-weight: bolder;
+        }
+        nav ul li a {
+            text-decoration: none ;
+            color: rgb(255, 255, 255);
+            opacity: 0.7;
+        }
+        nav ul li a:hover{
+            opacity: 1;
+        }
+        .about-img{
+            height: 300px;
+            width: 430px;
+            margin-top: 100px;
+            margin-left: 150px;
+            margin-bottom: -50px;
+            border: 10px solid ;
+            border-color: rgb(196, 196, 158);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.5s;
+            filter: grayscale(70%);
+        }
+        .about-img:hover{
+            filter: grayscale(0%);
+        }
+        .about-text{
+            margin-left: 750px;
+            margin-right: 300px;
+            margin-top: -260px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #2a1919;
+        }
+        .btn{
+            max-width: 150px;
+            padding: 10px 20px;
+            border: 1px solid ;
+            border-radius: 15px;
+            background-color: rgb(168, 118, 118);
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        button:hover {
+            background-color: rgb(226, 216, 204);;
+            color: black;
+        }
+        .icons {
+            list-style-type: none;
+            text-align: right;
+            margin-right: 550px;
+            margin-top: 10px;
+            padding: 10px 0px 10px 330px ;
+        }
+        .icons li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .icons li a {
+            color: #422121;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .icons li a:hover {
+            color: #322b25;
+        }
+    </style>
+    <title>About page</title>
+</head>
+<body>
+    <header>
+        <img src="iwtlogoimg.png" alt="" height="130px" width="130px" class="logo-img"> <br><br><br>
+        <nav>
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="product.html">Product</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+           </ul>
+        </nav>
+    </header>
+    <main>
+       <h2 style="text-align: center; font-size: 3rem; margin-top: 3rem;">About Us</h2>
+       <p style="text-align: center; font-size: 1rem; margin-top: 1rem;">We are the world's largest chocolate producers.</p>
+        <div>
+          <img src="iwtabout - Copy.jpg" alt="" class="about-img">
+            <div class="about-text">
+              <h2>About Our <br> Chocolate World</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, saepe!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere fugit ratione praesentium minima corrupti.</p> <br>
+              <button class="btn">Read More</button>
+            </div>
+ 
+        </div>
+    </main>
+    <footer>
+        <h2 style="text-align: center; font-size: 2rem; margin-top: 12rem;">About Us</h2>
+        <p style="text-align: center; font-size: 1rem; margin-top: 1rem;">Learn more about our mission, vision, and values that drive us forward.</p>
+        <ul class="icons">
+           <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+           <li><a href="#"><i class="fab fa-google"></i></a></li>
+           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+           <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+           <li><a href="#"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <br>
+    </footer>
+</body>
+</html>

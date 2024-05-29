@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+        body {
+            background-color: rgb(249, 241, 231);  
+            max-width: 1461px;
+        }
+        header {
+            margin-top: -1rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .logo-img{
+            margin-left: 2rem;
+        }
+        nav{
+            background-color: rgb(79, 55, 55);
+            padding: 1rem ;
+            margin-top: -8.5rem;
+            margin-left: -1rem;
+            width: 100%;
+            margin-right: -1rem;
+            font-family: sans-serif;
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none; 
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+            cursor: pointer;
+            margin-left:55rem;
+        }
+        nav ul li {
+            font-size: 1.3rem;
+            display: inline;
+            justify-content: center;
+            margin-left: 3.3rem;
+            font-weight: bolder;
+        }
+        nav ul li a {
+            text-decoration: none ;
+            color: rgb(255, 255, 255);
+            opacity: 0.7;
+        }
+        nav ul li a:hover{
+            opacity: 1;
+        }
+        main{
+            margin-top: 4rem;
+        }
+        .card{
+            border: 1px solid;
+        }
+        .info{
+            float: right;
+            margin-right: 15rem;
+            margin-top: -40rem;
+            font-size: 1.3rem;
+        }
+        .fas {
+            margin-top: 1rem;
+            font-size: 2rem; 
+            color: #322319; 
+            cursor: pointer:
+        }
+        .address{
+            margin-top: 0.7rem;
+            cursor: pointer;
+        }
+        .email{
+            margin-top: 0.7rem;
+            text-decoration: none;
+            color: #322319;
+            font-size: 1.7rem;
+            line-height: 1.5;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .telephone{
+            margin-top: 0.7rem;
+            cursor: pointer;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            width: 40%;
+            height: 490px;
+            flex-flow: column;
+            margin-top: 40px;
+            background: rgb(211, 171, 171);
+            border-radius: 106px;
+            margin-bottom: 200px;
+        }
+        .form-heading{
+            text-align: center;
+        }
+        .form-group{
+            position: relative;
+            margin: 12px 0;
+            margin-left: 75px;
+        }
+        .form-group input{
+            padding: 8px 96px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: #acacac solid 2px;
+            background-color:  rgb(226, 216, 204);
+            color: #000000;
+            transition: 0.15s all ease;
+        }
+        .form-group input:focus{
+            border-color: #eee;
+        }
+        .form-group input::placeholder{
+            color: transparent;
+        }
+        .form-group .form-label{
+            position: absolute;
+            top: 9px;
+            left: 0;
+            font-size: 18px;
+            padding: 0 10px;
+            color: #000000;
+            pointer-events: none;
+            transition: 0.15s all ease;
+        }
+        .form-group input:focus + .form-label,
+        .form-group input:not(:placeholder-shown)+
+        .form-label{
+            transform: translate(5px , -22px);
+            background-color:  rgb(226, 216, 204);
+            font-size: 17px;
+            border: none;
+            border-radius: 8px;
+        }
+        .msg{
+            height: 150px !important;
+            width: 218px !important;
+        }
+        .btn{
+            max-width: 150px;
+            padding: 10px 20px;
+            border: 1px solid ;
+            border-radius: 15px;
+            background-color: rgb(168, 118, 118);
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        button:hover {
+            background-color: rgb(226, 216, 204);
+            color: #322319;
+        }
+        .btn-1{
+            margin-left: 220px ;
+        }
+        .icons {
+            list-style-type: none;
+            text-align: right;
+            margin-right: 550px;
+            margin-top: 10px;
+            padding: 10px 0px 10px 330px ;
+        }
+        .icons li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .icons li a {
+            color: #422121;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .icons li a:hover {
+            color: #322b25;
+        }
+    </style>
+    <title>contact page</title>
+</head>
+<body>
+    <header>
+         <img src="iwtlogoimg.png" alt="" height="130px" width="130px" class="logo-img"> <br><br><br>
+        <nav>
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="product.html">Product</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+           </ul>
+        </nav>
+    </header>
+       <h2 style="text-align: center; font-size: 3rem; margin-top: 3rem;">Contact Us</h2>
+    <main>
+        <section class="card">
+          <form>
+           <h2 class="form-heading">Contact Us </h2>
+            <div class="form-group">
+              <input type="text" placeholder="Full Name">
+              <label for="" class="form-label"> Full Name</label>
+            </div>
+            <div class="form-group">
+              <input type="Email" placeholder="E-mail">
+              <label for="" class="form-label"> E-mail</label>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Message" class="msg">
+              <label for="" class="form-label"> Message</label>
+            </div> <br>
+              <button class="btn btn-1">submit here</button>
+          </form>
+        </section>
+        <div class="info">
+          <i class="fas fa-map-marker-alt" >Address</i> 
+          <h3 class="address">523 N FAIRFAX AVE <br> LOS ANGELES, CA 90048</h3>
+          <i class="fas fa-envelope email-icon">Email</i>
+          <a href="mailto:cocolateworld@gmail.com" class="email"><h2 class="email">ChocolateWorld@gmail.com</h2> </a>
+          <i class="fas fa-phone">Telephone</i>
+          <h3 class="telephone">+123 456 789</h3>
+        </div>
+    </main>
+    <footer>
+       <h2 style="text-align: center; font-size: 2rem; margin-top: -6rem;">About Us</h2>
+       <p style="text-align: center; font-size: 1rem; margin-top: 1rem;">Learn more about our mission, vision, and values that drive us forward.</p>
+        <ul class="icons">
+           <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+           <li><a href="#"><i class="fab fa-google"></i></a></li>
+           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+           <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+           <li><a href="#"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <br>
+    </footer>
+</body>
+</html>
